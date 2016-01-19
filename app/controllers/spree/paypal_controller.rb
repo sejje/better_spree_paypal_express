@@ -77,7 +77,7 @@ module Spree
       {
           :Name => item.product.name,
           :Number => item.variant.sku,
-          :Quantity => item.quantity,
+          :Quantity => AdhocVariant.find(item.variant.id).quantity,
           :Amount => {
               :currencyID => item.order.currency,
               :value => item.price
