@@ -148,7 +148,8 @@ module Spree
           :ShipToAddress => address_options,
           :PaymentDetailsItem => items,
           :ShippingMethod => "Shipping Method Name Goes Here",
-          :PaymentAction => "Sale"
+          :PaymentAction => "Sale",
+          :NoteToBuyer => "Actual quantity: 1234",
         }
       end
     end
